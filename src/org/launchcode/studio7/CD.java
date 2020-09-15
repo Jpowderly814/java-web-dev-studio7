@@ -1,6 +1,29 @@
 package org.launchcode.studio7;
 
-public class CD {
+public class CD extends BaseDisk implements Spinnable {
+    public CD(double transferRate, String encryptionType, double capacity, String content, double storageUsed) {
+        super(transferRate, encryptionType, capacity, content, storageUsed);
+    }
+
+    @Override
+    public void spinSpeed() {
+        System.out.println("CD SpinSpeed lives!");
+    }
+
+    @Override
+    public void storesData() {
+        System.out.println("CD storesData works!");
+    }
+
+    @Override
+    public void readsData() {
+        System.out.println("CD readsData works!");
+    }
+
+    @Override
+    public void deletesData() {
+        System.out.println("CD deletesDate works!");
+    }
 
     // TODO: Implement your custom interface.
 
